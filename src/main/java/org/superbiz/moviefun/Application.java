@@ -32,6 +32,7 @@ public class Application {
     public BlobStore blobStore() {
         AWSCredentials credentials = new BasicAWSCredentials(s3AccessKey, s3SecretKey);
         AmazonS3Client s3Client = new AmazonS3Client(credentials);
+        s3Client.setEndpoint(s3EndpointUrl);
 
         s3Client.setEndpoint(s3EndpointUrl);
 
