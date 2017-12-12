@@ -2,6 +2,7 @@ spring:
   jpa:
     generate-ddl: true
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
   datasource:
     url: jdbc:mysql://localhost:3306/movies?useSSL=false
     username: root
@@ -10,3 +11,9 @@ spring:
   mvc.view:
     prefix: /WEB-INF/
     suffix: .jsp
+
+s3:
+  endpointUrl: http://127.0.0.1:9000
+  accessKey: DS0BL6XYYODH671EAEMR
+  secretKey: FWqltcOhC8G9WNP/c6pUcyru4VyBPOfk/V5lWMlK
+  bucketName: moviefun
