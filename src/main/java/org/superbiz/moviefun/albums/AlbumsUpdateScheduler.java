@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 @EnableScheduling
 public class AlbumsUpdateScheduler {
 
-    private static final long SECONDS = 1000;
+/*    private static final long SECONDS = 1000;
 
     private final JdbcTemplate jdbcTemplate;
     private final AlbumsUpdater albumsUpdater;
@@ -56,5 +56,5 @@ public class AlbumsUpdateScheduler {
         );
 
         return updatedRows > 0;
-    }
+    }*/
 }
