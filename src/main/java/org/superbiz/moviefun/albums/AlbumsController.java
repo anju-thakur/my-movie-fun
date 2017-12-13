@@ -126,4 +126,12 @@ public class AlbumsController {
 
         return new Blob("default-cover", input, IMAGE_JPEG_VALUE);
     }
+
+    @GetMapping("/deleteall")
+    public String deleteall()
+    {
+        blobStore.deleteAll();
+        return "albums";
+    }
+
 }
